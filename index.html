@@ -26,20 +26,20 @@
             content: "";
             display: block;
             position: absolute;
-            bottom: -2px; /* Adjust this value to control the position of the underline */
+            bottom: -2px;
             left: 50%;
             width: 0;
-            height: 2px; /* Height of the underline */
-            background-color: #007bff; /* Color of the underline */
-            transition: width 0.3s ease;
+            height: 2px;
+            background-color: black;
+            transition: width 0.3s ease, left 0.3s ease;
         }
-
+        
         .navbar-nav .nav-link:hover::after {
-            width: 100%;
-            left: 0;
+            width: calc(100% - 20px);
+            left: 10px;
         }
 
-
+        
         .card-img-container {
             position: relative;
             overflow: hidden;

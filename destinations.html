@@ -23,18 +23,20 @@
         }
 
         .navbar-nav .nav-link::after {
-            content: "•";
+            content: "";
             display: block;
             position: absolute;
-            bottom: -10px;
+            bottom: -2px;
             left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            transition: width 0.3s ease, left 0.3s ease;
         }
-
+        
         .navbar-nav .nav-link:hover::after {
-            opacity: 1;
+            width: calc(100% - 20px);
+            left: 10px;
         }
 
         .card-img-container {
